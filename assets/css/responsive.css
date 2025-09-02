@@ -1,0 +1,57 @@
+@media (max-width: 1124px) {
+  #landing-page .mascot-img {
+    margin: 0; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  #landing-page .hero-text h1,
+  #landing-page.chatbox-page .hero-text h1 {
+    font-size: 46px;
+    line-height: 50px; } }
+@media (max-width: 767px) {
+  header {
+    padding: 18px 0; }
+
+  #landing-page {
+    height: 100%; }
+
+  #landing-page .container {
+    padding-top: 70px; }
+
+  #landing-page .hero-text h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px; }
+
+  #landing-page .btn {
+    padding: 12px 36px; }
+
+  #landing-page .img-wrapper .mascot-img {
+    justify-content: center;
+    margin: 0; }
+
+  #landing-page.chatbox-page .mascot-img {
+    margin: 0;
+    justify-content: center; }
+
+  #landing-page.chatbox-page .hero-text .title h3 {
+    font-size: 26px; }
+
+  #landing-page .img-wrapper .mascot-img img {
+    width: 250px !important; } }
+@media (max-width: 500px) {
+  #landing-page .hero-text h1 {
+    font-size: 27px;
+    line-height: 40px;
+    margin-bottom: 30px; }
+
+  #landing-page.chatbox-page .hero-text .title h3 {
+    font-size: 20px; }
+
+  #landing-page.chatbox-page .hero-text .title,
+  #landing-page.chatbox-page .hero-text .chat-cnt {
+    padding: 15px 20px; }
+
+  #landing-page.chatbox-page .chat-box .chat-cnt {
+    font-size: 14px;
+    line-height: 22px; } }
+
+/*# sourceMappingURL=responsive.css.map */

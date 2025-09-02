@@ -1,0 +1,22 @@
+@import "../variables.scss";
+header  {
+    position: fixed;
+    padding: 28px 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    .btn-primary {
+        margin-right: 11px;
+    }
+    .btn {
+         padding: 6px 13px;
+        font-size: 14px;
+    }
+    &.header-scrolled {
+         background: $main-clr;
+    }
+}

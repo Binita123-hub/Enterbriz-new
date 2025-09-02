@@ -1,0 +1,43 @@
+@keyframes fadeInText {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes lefttoright {
+  0% {
+    left: 40%; }
+  50% {
+    left: 62%; }
+  100% {
+    left: 40%; } }
+:root {
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 1s; }
+
+/** Keyframes **/
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+/* Animations */
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: var(--animation-timing-function);
+  animation-fill-mode: both;
+  animation-duration: var(--animation-duration);
+  will-change: transform, opacity; }
+
+/* Disable self animation */
+.animations-disabled,
+.animations-disabled [data-animation] {
+  animation: none !important;
+  opacity: 1 !important; }
+
+/* // Slide Animations */
+.slideInUp {
+  animation-name: slideInUp; }
+
+/*# sourceMappingURL=animation.css.map */
