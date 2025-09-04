@@ -1,71 +1,80 @@
 @media  (max-width: 1124px) {
-    #landing-page .mascot-img {
-        margin: 0;
-    }
 }
 
 @media (min-width:768px) and (max-width: 1023px) {
-  #landing-page .hero-text h1,
-  #landing-page.chatbox-page .hero-text h1 {
-        font-size: 46px;
-        line-height: 50px;
-    }   
+    #landing-page .hero-text h1,
+    #landing-page.chatbox-page .hero-text h1 {
+        font-size: calc(4vw  + 1vmin);
+        line-height:  calc(5vw  + 1vmin);
+    } 
+    #landing-page.chatbox-page .chat-box .chat-cnt {
+        height: 125px;
+    }  
 }
 
 @media (max-width: 992px) {
-    
 }
 
 @media (max-width: 767px) {
     header {
-         padding: 18px 0;
+        padding: 18px 0;
     }
     #landing-page {
         height: 100%;
     }
     #landing-page .container {
-         padding-top: 70px;
+        padding-top: 70px;
     }
-    #landing-page .hero-text h1{
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 50px;        
+    #landing-page .hero-text h1 {
+        font-size: calc(6vw  + 1vmin);
+        line-height:  calc(7vw  + 1vmin);
     } 
-    #landing-page .btn{
-        padding: 12px 36px;
-    } 
-    #landing-page .img-wrapper .mascot-img {
-        justify-content: center;
-        margin: 0;
+    #landing-page .hero-text {
+        padding-bottom: 0;
     }
-    #landing-page.chatbox-page .mascot-img {
-        margin: 0;
-        justify-content: center;
+    #landing-page .hero-text h1 {
+        margin-bottom: 20px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    #landing-page .img-wrapper .mascot-img,
+    #landing-page.chatbox-page .img-wrapper .mascot-img {
+         margin: 0;
+    }
+    #landing-page.chatbox-page .hero-text h1 {
+        font-size: calc(5vw  + 1vmin);
+        line-height:  calc(6vw  + 1vmin);
+    } 
+    #landing-page .img-wrapper .mascot-img img {
+        width: 230px !important;
     }
     #landing-page.chatbox-page .hero-text .title h3 {
-        font-size: 26px;
-    }
-    #landing-page .img-wrapper .mascot-img img {
-        width: 250px !important;
+       font-size: calc(3vw  + 1vmin);  
     }
 
 }
 
 @media (max-width: 500px) {
-    #landing-page .hero-text h1{
-        font-size: 27px;
-        line-height: 40px;
-        margin-bottom: 30px;
-    } 
-    #landing-page.chatbox-page .hero-text .title h3 {
-         font-size: 20px;
-    }   
-    #landing-page.chatbox-page .hero-text .title,
-    #landing-page.chatbox-page .hero-text .chat-cnt {
-         padding: 15px 20px;
-    } 
-    #landing-page.chatbox-page .chat-box .chat-cnt {
-        font-size: 14px;
-        line-height: 22px;
-    }     
+    header .logo {
+        width: 35%;
+    }
+    header .btn {
+        padding: 6px 10px;
+    }
+    #landing-page.chatbox-page .chat-box .title,
+    #landing-page.chatbox-page .chat-box .chat-cnt,
+    #landing-page .group {
+        padding: 10px 16px;
+    }
+    #landing-page.chatbox-page .chat-box .chat-cnt p,
+    #landing-page .group textarea {
+       font-size: calc(2vw  + 1vmin);   
+    }
+    #landing-page.chatbox-page .chat-box .close-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+        
 }

@@ -1,5 +1,20 @@
 
+const images = [
+      './images/Side-Mascot-1.png',
+      './images/Side-Mascot-2.png',
+      './images/Side-Mascot-3.png',
+    ];
 
+    let currentIndex = 0;
+    const slider = document.getElementById('slider');
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      slider.src = images[currentIndex];
+    }, 500); // Change image every 1000ms (1 second)
+
+
+    
 //heading animation
 class TextAnimator {
     constructor(selector, options) {

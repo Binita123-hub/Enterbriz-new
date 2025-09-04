@@ -8,8 +8,6 @@ header {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-  header .btn-primary {
-    margin-right: 11px; }
   header .btn {
     padding: 6px 13px;
     font-size: 14px; }

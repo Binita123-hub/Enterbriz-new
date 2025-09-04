@@ -154,8 +154,6 @@ header {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-  header .btn-primary {
-    margin-right: 11px; }
   header .btn {
     padding: 6px 13px;
     font-size: 14px; }
@@ -205,10 +203,7 @@ header {
     transform: translateX(-50%);
     animation: lefttoright 11400ms  infinite; }
     #landing-page .img-wrapper .mascot-img {
-      display: flex;
-      justify-content: end; }
-      #landing-page .img-wrapper .mascot-img img {
-        width: 84%; }
+      margin-right: -13%; }
   #landing-page.chatbox-page .chat-box {
     filter: drop-shadow(-18.651px -3.625px 13.5px rgba(0, 0, 0, 0.29));
     background: rgba(15, 104, 254, 0.651);
@@ -242,6 +237,8 @@ header {
       height: 160px; }
       #landing-page.chatbox-page .chat-box .chat-cnt p {
         border-bottom: 1px solid #0f68fe; }
+  #landing-page.chatbox-page .img-wrapper .mascot-img {
+    margin-right: -17%; }
   #landing-page .group {
     border-top: 1px solid #44c8f5;
     padding: 10px 20px; }
@@ -253,14 +250,14 @@ header {
       color: #e6e1e1;
       cursor: pointer; }
 
-@media (max-width: 1124px) {
-  #landing-page .mascot-img {
-    margin: 0; } }
 @media (min-width: 768px) and (max-width: 1023px) {
   #landing-page .hero-text h1,
   #landing-page.chatbox-page .hero-text h1 {
-    font-size: 46px;
-    line-height: 50px; } }
+    font-size: calc(4vw  + 1vmin);
+    line-height: calc(5vw  + 1vmin); }
+
+  #landing-page.chatbox-page .chat-box .chat-cnt {
+    height: 125px; } }
 @media (max-width: 767px) {
   header {
     padding: 18px 0; }
@@ -272,41 +269,50 @@ header {
     padding-top: 70px; }
 
   #landing-page .hero-text h1 {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 50px; }
+    font-size: calc(6vw  + 1vmin);
+    line-height: calc(7vw  + 1vmin); }
 
-  #landing-page .btn {
-    padding: 12px 36px; }
+  #landing-page .hero-text {
+    padding-bottom: 0; }
 
-  #landing-page .img-wrapper .mascot-img {
-    justify-content: center;
+  #landing-page .hero-text h1 {
+    margin-bottom: 20px; }
+
+  .btn {
+    font-size: 14px; }
+
+  #landing-page .img-wrapper .mascot-img,
+  #landing-page.chatbox-page .img-wrapper .mascot-img {
     margin: 0; }
 
-  #landing-page.chatbox-page .mascot-img {
-    margin: 0;
-    justify-content: center; }
-
-  #landing-page.chatbox-page .hero-text .title h3 {
-    font-size: 26px; }
+  #landing-page.chatbox-page .hero-text h1 {
+    font-size: calc(5vw  + 1vmin);
+    line-height: calc(6vw  + 1vmin); }
 
   #landing-page .img-wrapper .mascot-img img {
-    width: 250px !important; } }
-@media (max-width: 500px) {
-  #landing-page .hero-text h1 {
-    font-size: 27px;
-    line-height: 40px;
-    margin-bottom: 30px; }
+    width: 230px !important; }
 
   #landing-page.chatbox-page .hero-text .title h3 {
-    font-size: 20px; }
+    font-size: calc(3vw  + 1vmin); } }
+@media (max-width: 500px) {
+  header .logo {
+    width: 35%; }
 
-  #landing-page.chatbox-page .hero-text .title,
-  #landing-page.chatbox-page .hero-text .chat-cnt {
-    padding: 15px 20px; }
+  header .btn {
+    padding: 6px 10px; }
 
-  #landing-page.chatbox-page .chat-box .chat-cnt {
-    font-size: 14px;
-    line-height: 22px; } }
+  #landing-page.chatbox-page .chat-box .title,
+  #landing-page.chatbox-page .chat-box .chat-cnt,
+  #landing-page .group {
+    padding: 10px 16px; }
+
+  #landing-page.chatbox-page .chat-box .chat-cnt p,
+  #landing-page .group textarea {
+    font-size: calc(2vw  + 1vmin); }
+
+  #landing-page.chatbox-page .chat-box .close-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

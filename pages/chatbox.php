@@ -21,8 +21,7 @@
                             <p>Welcome to Enterbiz. I’m here to help you.</p>
                         </div>
                         <div class="group flex items-center">
-                            <!-- <input type="text" id="name-input" class="text-sm block w-full p-0 me-2" placeholder="Type a message..."> -->
-                            <textarea id="message" rows="4" class="block p-0 w-full text-sm me-4" placeholder="Type a message..."></textarea>  
+                            <textarea id="message" rows="4" class="block p-0 w-full xs:text-sm me-4" placeholder="Type a message..."></textarea>  
                             <div class="send-icon">
                                 <i class="fa-regular fa-paper-plane"></i>       
                             </div>                    
@@ -32,8 +31,8 @@
             </div>
             <div class="flex-col md:w-[27%]" data-animation="slideInUp" data-animation-delay="0.10s">
                 <div class="img-wrapper">
-                    <div class="mascot-img" >
-                        <img src="./images/mascot.png" alt="" />
+                    <div class="mascot-img md:mr-4 flex justify-center md:justify-end">
+                        <img id="slider" src="./images/Side-Mascot-1.png" alt="Slideshow Image">  
                     </div>
                 </div>
             </div>

@@ -41,10 +41,7 @@
     transform: translateX(-50%);
     animation: lefttoright 11400ms  infinite; }
     #landing-page .img-wrapper .mascot-img {
-      display: flex;
-      justify-content: end; }
-      #landing-page .img-wrapper .mascot-img img {
-        width: 84%; }
+      margin-right: -13%; }
   #landing-page.chatbox-page .chat-box {
     filter: drop-shadow(-18.651px -3.625px 13.5px rgba(0, 0, 0, 0.29));
     background: rgba(15, 104, 254, 0.651);
@@ -78,6 +75,8 @@
       height: 160px; }
       #landing-page.chatbox-page .chat-box .chat-cnt p {
         border-bottom: 1px solid #0f68fe; }
+  #landing-page.chatbox-page .img-wrapper .mascot-img {
+    margin-right: -17%; }
   #landing-page .group {
     border-top: 1px solid #44c8f5;
     padding: 10px 20px; }
