@@ -12,7 +12,7 @@
                         <div class="title flex justify-between items-center">
                             <h3>Chat</h3>
                             <div class="close-icon">
-                                <a href="index.php">
+                                <a href="#">
                                     <i class="fa-solid fa-x"></i>
                                 </a>
                             </div>
