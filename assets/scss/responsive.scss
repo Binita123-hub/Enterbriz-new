@@ -2,17 +2,16 @@
 }
 
 @media (min-width:768px) and (max-width: 1023px) {
-    #landing-page .hero-text h1,
-    #landing-page.chatbox-page .hero-text h1 {
+    #landing-page .hero-text h1{
         font-size: calc(4vw  + 1vmin);
         line-height:  calc(5vw  + 1vmin);
-    } 
-    #landing-page.chatbox-page .chat-box .chat-cnt {
-        height: 125px;
     }  
 }
 
 @media (max-width: 992px) {
+    #landing-page.chatbox-page .chat-box .title h3{
+        font-size: 18px;
+    } 
 }
 
 @media (max-width: 767px) {
@@ -21,9 +20,6 @@
     }
     #landing-page {
         height: 100%;
-    }
-    #landing-page .container {
-        padding-top: 70px;
     }
     #landing-page .hero-text h1 {
         font-size: calc(6vw  + 1vmin);
@@ -42,15 +38,12 @@
     #landing-page.chatbox-page .img-wrapper .mascot-img {
          margin: 0;
     }
-    #landing-page.chatbox-page .hero-text h1 {
-        font-size: calc(5vw  + 1vmin);
-        line-height:  calc(6vw  + 1vmin);
-    } 
+
     #landing-page .img-wrapper .mascot-img img {
         width: 230px !important;
     }
-    #landing-page.chatbox-page .hero-text .title h3 {
-       font-size: calc(3vw  + 1vmin);  
+    #landing-page.chatbox-page .chat-box .title h3 {
+       font-size: 16px;  
     }
 
 }
@@ -62,19 +55,22 @@
     header .btn {
         padding: 6px 10px;
     }
+    #landing-page.chatbox-page .hero-text h1 {
+        font-size: 20px;
+    }
     #landing-page.chatbox-page .chat-box .title,
     #landing-page.chatbox-page .chat-box .chat-cnt,
     #landing-page .group {
         padding: 10px 16px;
     }
-    #landing-page.chatbox-page .chat-box .chat-cnt p,
-    #landing-page .group textarea {
-       font-size: calc(2vw  + 1vmin);   
-    }
     #landing-page.chatbox-page .chat-box .close-icon {
         width: 20px;
         height: 20px;
         font-size: 10px;
+    }
+    #landing-page.chatbox-page .chat-box .title h3 {
+       font-size: 15px; 
+        width: 90%; 
     }
         
 }

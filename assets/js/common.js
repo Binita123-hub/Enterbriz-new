@@ -2,7 +2,8 @@
 const images = [
       './images/Side-Mascot-1.png',
       './images/Side-Mascot-2.png',
-      './images/Side-Mascot-3.png',
+      // './images/Side-Mascot-3.png',
+      './images/Side-Mascot-1.png',
     ];
 
     let currentIndex = 0;
@@ -11,7 +12,7 @@ const images = [
     setInterval(() => {
       currentIndex = (currentIndex + 1) % images.length;
       slider.src = images[currentIndex];
-    }, 500); // Change image every 1000ms (1 second)
+    }, 800); // Change image every 1000ms (1 second)
 
 
     
@@ -131,30 +132,38 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-// //Multi-line Input 
-// let input = document.getElementById("input");
-// let output = document.getElementById("output");
-
-// function renderList(){
-//   let newList = "";
-  
-//   var lines = input.value.split('\n');
-//   for(var i = 0;i < lines.length;i++){
-//     newList += `${lines[i]} `;
-//   }
-//   //newList += "</ul>";
-//   console.log(newList);
-//   output.textContent = newList; // set text
-//   output.textContent.replace(/(\r\n|\n|\r)/gm, ""); // remove \n (may work)
-//   output.style.height = (30 * 10) + "px"; // set output height accordingly
-  
-// }
-
-// output.addEventListener("click", () => {
-//   console.log(output.value);
-//   navigator.clipboard.writeText(output.value);
-// });
+document.querySelectorAll('.accordion-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.accordion-icon i');
+        
+        // Toggle active class on button
+        button.classList.toggle('active');
+        
+        // Toggle content visibility
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.classList.remove('fa-angle-up');
+            icon.classList.add('fa-angle-down');
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.classList.remove('fa-angle-down');
+            icon.classList.add('fa-angle-up');
+        }
+        
+        // Close other open accordion items
+        document.querySelectorAll('.accordion-toggle').forEach(otherButton => {
+            if (otherButton !== button) {
+                const otherContent = otherButton.nextElementSibling;
+                const otherIcon = otherButton.querySelector('.accordion-icon i');
+                
+                otherContent.style.maxHeight = null;
+                otherIcon.classList.remove('fa-angle-up');
+                otherIcon.classList.add('fa-angle-down');
+            }
+        });
+    });
+});
 
 
 

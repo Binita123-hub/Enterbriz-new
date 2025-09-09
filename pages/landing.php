@@ -6,7 +6,7 @@
                 <div class="hero-text text-center" >
                     <h1>
                         <div  class="text-blob">START and GROW</div>
-                        <div class="text-block">YOUR BUSINESS IN THEUS</div>
+                        <div class="text-block">YOUR BUSINESS IN THE US</div>
                     </h1>
                     <a href="chatbox-page.php" class="btn btn-primary"><span>Know More</sapn></a>
                 </div>
@@ -21,10 +21,3 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
